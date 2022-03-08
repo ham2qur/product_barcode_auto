@@ -33,9 +33,10 @@
             <field name="arch" type="xml">
 				<field name="barcode" position="after">
 				     <field name="check_barcode_setting" invisible="1"/>
-					<button name="%(action_generate_barcode_manually_bi)d" type="action" string="Manually Generate Barcode" 
-                                        class="oe_link" attrs="{'invisible': [('check_barcode_setting', '=', False)]}"/><br/>
-                                       
+					<!-- <button name="%(action_generate_barcode_manually_bi)d" type="action" string="Manually Generate Barcode" 
+                                        class="oe_link" attrs="{'invisible': [('check_barcode_setting', '=', False)]}"/> -->
+                    <button name="%(action_generate_barcode_manually_bi)d" type="action" string="Manually Generate Barcode" class="oe_link"/>
+                    <br/>                   
                     <field name="barcode_img" widget= 'image' width="200px" height="70px" nolabel="1"/>                  
 				</field>
 			</field>
