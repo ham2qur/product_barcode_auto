@@ -10,6 +10,7 @@
     'website': 'http://www.tradetec.info',
     'depends': ['base', 'product', 'sale', 'barcodes','sale_management'],
     'data': [
+        'security/ir.model.access.csv',
         'views/generate_product_ean13_view.xml',
         'views/res_config_view.xml'
     ],
