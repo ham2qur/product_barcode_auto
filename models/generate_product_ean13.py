@@ -27,7 +27,7 @@ class biproductgeneratebarcodemanually(models.TransientModel):
 class bi_generate_product_barcode(models.TransientModel):
     _name = 'bi.product.generate.barcode'
 
-    overwrite= fields.Boolean(String="Overwrite Exists Ean13")
+    overwrite = fields.Boolean(string = "Overwrite Exists Ean13")
     generate_type = fields.Selection([('reference', 'Using Internal Reference'), ('random', 'Using Random Number')],
                                        string='Barcode Generate Option', default='reference')
 
