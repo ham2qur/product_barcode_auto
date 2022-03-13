@@ -8,7 +8,7 @@
 """,
     'author': 'ham2qur',
     'website': 'http://www.tradetec.info',
-    'depends': ['base', 'product', 'sale', 'barcodes','sale_management'],
+    'depends': ['base', 'product', 'sale', 'barcodes','sale_management', 'bi_dynamic_barcode_labels'],
     'data': [
         'security/ir.model.access.csv',
         'views/generate_product_ean13_view.xml',
